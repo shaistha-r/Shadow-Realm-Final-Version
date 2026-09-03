@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78" android:contentDescription="Shadow Realm night landscape"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <include layout="@layout/realm_topbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="21dp" android:layout_marginTop="12dp" android:background="@drawable/realm_panel">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NIGHT FALLS" android:textColor="@color/realm_purple_bright" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.10" android:gravity="center"/>
+        <TextView android:id="@+id/tvNightRole" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="YOUR TURN" android:textColor="@color/realm_text" android:textSize="27sp" android:textStyle="bold" android:fontFamily="serif" android:gravity="center" android:layout_marginTop="7dp"/>
+        <TextView android:id="@+id/tvNightInstruction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Choose one player carefully." android:textColor="@color/realm_muted" android:textSize="14sp" android:gravity="center" android:layout_marginTop="7dp"/>
+        <RadioGroup android:id="@+id/nightGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+            <RadioButton android:id="@+id/night1" android:layout_width="match_parent" android:layout_height="48dp" android:text="Player" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple"/>
+            <RadioButton android:id="@+id/night2" android:layout_width="match_parent" android:layout_height="48dp" android:text="Player" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple"/>
+            <RadioButton android:id="@+id/night3" android:layout_width="match_parent" android:layout_height="48dp" android:text="Player" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple"/>
+            <RadioButton android:id="@+id/night4" android:layout_width="match_parent" android:layout_height="48dp" android:text="Player" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple" android:visibility="gone"/>
+            <RadioButton android:id="@+id/night5" android:layout_width="match_parent" android:layout_height="48dp" android:text="Player" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple" android:visibility="gone"/>
+            <RadioButton android:id="@+id/night6" android:layout_width="match_parent" android:layout_height="48dp" android:text="Player" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple" android:visibility="gone"/>
+        </RadioGroup>
+        <Button android:id="@+id/btnNightAction" android:layout_width="match_parent" android:layout_height="57dp" android:layout_marginTop="15dp" android:text="LOCK NIGHT ACTION" android:textColor="@color/realm_text" android:textStyle="bold" android:background="@drawable/realm_button"/>
+        <TextView android:id="@+id/tvNightNote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Villagers can observe. Special roles may act." android:textColor="#82768E" android:textSize="11sp" android:gravity="center" android:layout_marginTop="13dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

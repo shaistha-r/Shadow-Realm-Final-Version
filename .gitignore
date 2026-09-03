@@ -1,0 +1,21 @@
+# Android / Gradle
+**/.gradle/
+**/build/
+**/local.properties
+
+# IntelliJ / Android Studio
+**/.idea/
+*.iml
+
+# Java / Spring Boot
+**/target/
+
+# Secrets / environment files
+.env
+.env.*
+**/.env
+**/.env.*
+
+# OS files
+.DS_Store
+Thumbs.db

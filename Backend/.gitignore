@@ -1,0 +1,7 @@
+# IDE / build
+.idea/
+target/
+
+# Local secret configuration
+.env
+src/main/resources/application-local.properties

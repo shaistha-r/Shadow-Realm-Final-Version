@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center_vertical">
+    <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
+        android:background="@android:color/transparent" android:src="@drawable/ic_arrow_back"
+        android:contentDescription="Back" android:padding="12dp"/>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+        android:orientation="vertical" android:paddingStart="6dp">
+        <TextView android:id="@+id/tvTopTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="SHADOW REALM" android:textColor="@color/realm_text" android:textSize="18sp"
+            android:textStyle="bold" android:fontFamily="serif"/>
+        <TextView android:id="@+id/tvTopSubtitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="TRUST NO ONE • SURVIVE THE NIGHT" android:textColor="@color/realm_purple_bright"
+            android:textSize="9sp" android:textStyle="bold" android:letterSpacing="0.08" android:layout_marginTop="2dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tvTopBadge" android:layout_width="wrap_content" android:layout_height="32dp"
+        android:paddingStart="12dp" android:paddingEnd="12dp" android:gravity="center"
+        android:text="REALM" android:textColor="@color/realm_lilac" android:textSize="10sp"
+        android:textStyle="bold" android:background="@drawable/realm_chip"/>
+</LinearLayout>

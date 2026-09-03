@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78" android:contentDescription="Shadow Realm night landscape"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <include layout="@layout/realm_topbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="21dp" android:layout_marginTop="12dp" android:background="@drawable/realm_panel">
+        <TextView android:id="@+id/tvRound" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ROUND 1  •  DISCUSSION" android:textColor="@color/realm_purple_bright" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.08"/>
+        <TextView android:id="@+id/txtGameStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The realm is watching." android:textColor="@color/realm_text" android:textSize="25sp" android:textStyle="bold" android:fontFamily="serif" android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/tvGameHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Speak carefully. Every contradiction can become evidence." android:textColor="@color/realm_muted" android:textSize="14sp" android:layout_marginTop="8dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="YOUR ROLE" android:textColor="@color/realm_purple_bright" android:textSize="10sp" android:textStyle="bold" android:layout_marginTop="21dp"/>
+        <TextView android:id="@+id/tvGameRole" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="VILLAGER" android:textColor="@color/realm_lilac" android:textSize="18sp" android:textStyle="bold" android:padding="14dp" android:layout_marginTop="7dp" android:background="@drawable/realm_panel_soft"/>
+        <TextView android:id="@+id/tvAlivePlayers" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LIVING PLAYERS" android:textColor="@color/realm_lilac" android:textSize="12sp" android:padding="14dp" android:layout_marginTop="9dp" android:background="@drawable/realm_panel_soft"/>
+        <Button android:id="@+id/btnChat" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="18dp" android:text="💬  ENTER DISCUSSION" android:textColor="@color/realm_text" android:textStyle="bold" android:background="@drawable/realm_button_dark"/>
+        <Button android:id="@+id/btnNight" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="9dp" android:text="☾  NIGHT ACTION" android:textColor="@color/realm_lilac" android:textStyle="bold" android:background="@drawable/realm_button_dark"/>
+        <Button android:id="@+id/btnVote" android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginTop="9dp" android:text="⚔  CAST YOUR VOTE" android:textColor="@color/realm_text" android:textStyle="bold" android:background="@drawable/realm_button"/>
+        <Button android:id="@+id/btnSpectateEnd" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:text="WATCH THE REALM END" android:textColor="@color/realm_lilac" android:textSize="12sp" android:background="@drawable/realm_button_dark" android:visibility="gone"/>
+        <Button android:id="@+id/btnBackToHomeFromGame" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" android:text="RETURN TO HOME" android:textColor="@color/realm_lilac" android:textSize="12sp" android:background="@drawable/realm_button_dark" android:visibility="gone" android:onClick="returnHome"/>
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

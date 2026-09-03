@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/realm_panel_soft"/>
+    <corners android:radius="20dp"/>
+    <stroke android:width="1dp" android:color="#358F70B6"/>
+</shape>

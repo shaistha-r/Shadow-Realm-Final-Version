@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78" android:contentDescription="Shadow Realm night landscape"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <include layout="@layout/realm_topbar"/>
+    <LinearLayout android:id="@+id/roomPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="21dp" android:layout_marginTop="12dp" android:background="@drawable/realm_panel">
+        <TextView android:id="@+id/tvRoomHeading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ROOM GATE" android:textColor="@color/realm_text" android:textSize="25sp" android:textStyle="bold" android:fontFamily="serif"/>
+        <TextView android:id="@+id/tvRoomHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Create a private realm. Your room code will be generated instantly." android:textColor="@color/realm_muted" android:textSize="14sp" android:layout_marginTop="6dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ROOM CODE" android:textColor="@color/realm_purple_bright" android:textSize="10sp" android:textStyle="bold" android:layout_marginTop="20dp"/>
+        <EditText android:id="@+id/etRoomCode" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="6dp" android:background="@drawable/realm_input" android:hint="  6-character code" android:textColor="@color/realm_text" android:textColorHint="#8E849B" android:inputType="textCapCharacters" android:gravity="center"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PLAYER NAME" android:textColor="@color/realm_purple_bright" android:textSize="10sp" android:textStyle="bold" android:layout_marginTop="13dp"/>
+        <EditText android:id="@+id/etPlayerName" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="6dp" android:background="@drawable/realm_input" android:hint="  Your realm name" android:textColor="@color/realm_text" android:textColorHint="#8E849B" android:inputType="textPersonName"/>
+        <Button android:id="@+id/btnCreateRoom" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="17dp" android:text="✦  CREATE ROOM" android:textColor="@color/realm_text" android:textStyle="bold" android:background="@drawable/realm_button"/>
+        <Button android:id="@+id/btnAddPlayer" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="9dp" android:text="" android:textColor="@color/realm_lilac" android:textSize="12sp" android:background="@drawable/realm_button_dark"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PLAYERS IN THE REALM" android:textColor="@color/realm_text" android:textSize="13sp" android:textStyle="bold" android:letterSpacing="0.06" android:layout_marginTop="22dp"/>
+        <TextView android:id="@+id/tvPlayers" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No players have entered yet." android:textColor="@color/realm_lilac" android:textSize="14sp" android:padding="15dp" android:layout_marginTop="8dp" android:background="@drawable/realm_panel_soft"/>
+        <Button android:id="@+id/btnStartGame" android:layout_width="match_parent" android:layout_height="57dp" android:layout_marginTop="16dp" android:text="⚔  OPEN THE GATES" android:textColor="@color/realm_text" android:textStyle="bold" android:background="@drawable/realm_button"/>
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

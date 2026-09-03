@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78" android:contentDescription="Shadow Realm night landscape"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:minHeight="640dp">
+    <include layout="@layout/realm_topbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="500dp" android:orientation="vertical" android:padding="16dp" android:layout_marginTop="12dp" android:background="@drawable/realm_panel">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DISCUSSION CHANNEL  •  PUBLIC" android:textColor="@color/realm_purple_bright" android:textSize="10sp" android:textStyle="bold" android:letterSpacing="0.08"/>
+        <ScrollView android:id="@+id/chatScroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="9dp">
+            <TextView android:id="@+id/txtMessages" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SYSTEM  •  The discussion has begun.\n\nMIRA  •  I saw someone leave the east gate.\n\nSYSTEM  •  Accusations are allowed. Secrets are not.\n\nYOU  •  " android:textColor="@color/realm_lilac" android:textSize="14sp" android:lineSpacingExtra="5dp"/>
+        </ScrollView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="9dp">
+            <EditText android:id="@+id/etMessage" android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:background="@drawable/realm_input" android:hint="  Whisper your theory..." android:textColor="@color/realm_text" android:textColorHint="#8E849B" android:inputType="textCapSentences" android:maxLines="2"/>
+            <Button android:id="@+id/btnSend" android:layout_width="78dp" android:layout_height="52dp" android:layout_marginStart="7dp" android:text="SEND" android:textColor="@color/realm_text" android:textSize="11sp" android:textStyle="bold" android:background="@drawable/realm_button"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

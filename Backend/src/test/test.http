@@ -1,0 +1,165 @@
+@token = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huQGdtYWlsLmNvbSIsImlhdCI6MTc4NjAzNDE1NywiZXhwIjoxNzg2MTIwNTU3fQ.iVdSav3AO41tbrg5MamqoNQMQwo7UCJNoYq7Hrj2NbY
+
+### Register
+POST http://localhost:8080/users/register
+Content-Type: application/json
+
+{
+  "username": "john",
+  "email": "john@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### Login
+POST http://localhost:8080/users/login
+Content-Type: application/json
+
+{
+  "email": "john@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### Public API
+GET http://localhost:8080/hello
+
+###
+
+### Create Room (Protected)
+POST http://localhost:8080/room/create?hostId=1&maxPlayers=5
+Authorization: Bearer {{token}}
+
+###
+
+### Start Game (Protected)
+POST http://localhost:8080/game/start?roomCode=0086E0
+Authorization: Bearer {{token}}
+
+###
+
+### Get Game (Protected)
+GET http://localhost:8080/game/0086E0
+Authorization: Bearer {{token}}
+
+###
+
+### Next Phase (Protected)
+PUT http://localhost:8080/game/next?roomCode=0086E0
+Authorization: Bearer {{token}}
+
+###
+
+### End Game (Protected)
+PUT http://localhost:8080/game/end?roomCode=0086E0
+Authorization: Bearer {{token}}
+
+###
+
+### Add Host Player (Protected)
+POST http://localhost:8080/player/add?userId=1&roomCode=0086E0&host=true
+Authorization: Bearer {{token}}
+
+###
+
+### Add Second Player (Protected)
+POST http://localhost:8080/player/add?userId=2&roomCode=0086E0&host=false
+Authorization: Bearer {{token}}
+
+###
+
+### Get Players (Protected)
+GET http://localhost:8080/player/0086E0
+Authorization: Bearer {{token}}
+
+###
+
+### Duplicate Register
+POST http://localhost:8080/users/register
+Content-Type: application/json
+
+{
+  "username": "john",
+  "email": "john@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### Wrong Password
+POST http://localhost:8080/users/login
+Content-Type: application/json
+
+{
+  "email": "john@gmail.com",
+  "password": "wrongpassword"
+}
+
+###
+
+### User Not Found
+POST http://localhost:8080/users/login
+Content-Type: application/json
+
+{
+  "email": "abc@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### Validation Test
+POST http://localhost:8080/users/register
+Content-Type: application/json
+
+{
+  "username": "",
+  "email": "not-an-email",
+  "password": "123"
+}
+
+###
+
+### Protected API WITHOUT Token (Should return 401)
+GET http://localhost:8080/game/0086E0
+
+###
+
+### Protected API WITH Token (Should return 200)
+GET http://localhost:8080/game/0086E0
+Authorization: Bearer {{token}}
+
+### Add Host Player
+
+POST http://localhost:8080/player/add?userId=1&roomCode=0086E0&host=true
+Authorization: Bearer {{token}}
+
+###
+
+### Add Second Player
+
+POST http://localhost:8080/player/add?userId=2&roomCode=0086E0&host=false
+Authorization: Bearer {{token}}
+
+###
+
+### Get All Players
+
+GET http://localhost:8080/player/0086E0
+Authorization: Bearer {{token}}
+
+###
+
+### Get Alive Players
+
+GET http://localhost:8080/player/alive/0086E0
+Authorization: Bearer {{token}}
+
+###
+
+### Count Players
+
+GET http://localhost:8080/player/count/0086E0
+Authorization: Bearer {{token}}

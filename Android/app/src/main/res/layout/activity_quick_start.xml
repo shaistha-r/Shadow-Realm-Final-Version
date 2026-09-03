@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <include layout="@layout/realm_topbar"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:layout_marginTop="18dp" android:background="@drawable/realm_panel">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="THE NIGHT IS READY" android:textColor="@color/realm_purple_bright" android:textSize="11sp" android:textStyle="bold" android:gravity="center" android:letterSpacing="0.12"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="A COMPLETE SHADOW REALM" android:textColor="@color/realm_text" android:textSize="28sp" android:textStyle="bold" android:fontFamily="serif" android:gravity="center" android:layout_marginTop="8dp"/>
+          <TextView android:id="@+id/tvStarterName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Playing as • Night Walker" android:textColor="@color/realm_gold" android:textSize="13sp" android:gravity="center" android:layout_marginTop="14dp"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Seven players. One hidden Traitor. One secret word. Special roles, night actions, discussion, voting, elimination and a real winner check — all playable without a server for your presentation." android:textColor="@color/realm_muted" android:textSize="14sp" android:gravity="center" android:layout_marginTop="18dp"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="✓ Secret word / Traitor hint
+✓ Private role assignment
+✓ Seer investigation
+✓ Healer protection
+✓ Traitor night attack
+✓ Discussion chat
+✓ Bot votes + elimination
+✓ Villager / Traitor winner logic" android:textColor="@color/realm_lilac" android:textSize="13sp" android:layout_marginTop="22dp"/>
+          <Button android:id="@+id/btnBeginRealm" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="25dp" android:text="BEGIN THE RITUAL  ✦" android:textColor="@color/realm_text" android:textStyle="bold" android:textSize="14sp" android:background="@drawable/realm_button"/>
+        </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+</FrameLayout>

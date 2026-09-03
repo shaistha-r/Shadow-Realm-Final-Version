@@ -1,0 +1,12 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#030108</item>
+        <item name="android:navigationBarColor">#030108</item>
+        <item name="android:windowBackground">@color/realm_bg</item>
+        <item name="colorAccent">@color/realm_purple</item>
+        <item name="android:colorAccent">@color/realm_purple</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>

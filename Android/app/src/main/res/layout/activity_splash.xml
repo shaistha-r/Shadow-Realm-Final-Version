@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.82" android:contentDescription="Shadow Realm"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="28dp">
+        <ImageView android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/ic_lock" android:contentDescription="Shadow Realm"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHADOW REALM" android:textColor="@color/realm_text" android:textSize="35sp" android:textStyle="bold" android:fontFamily="serif" android:letterSpacing="0.10" android:layout_marginTop="14dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TRUST NO ONE • SURVIVE THE NIGHT" android:textColor="@color/realm_purple_bright" android:textSize="10sp" android:textStyle="bold" android:letterSpacing="0.12" android:layout_marginTop="7dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="THE GATES ARE OPENING…" android:textColor="#9D91A8" android:textSize="11sp" android:layout_marginTop="35dp"/>
+    </LinearLayout>
+</FrameLayout>

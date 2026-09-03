@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78" android:contentDescription="Shadow Realm night landscape"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <include layout="@layout/realm_topbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="23dp" android:layout_marginTop="12dp" android:background="@drawable/realm_panel">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="THE VERDICT" android:textColor="@color/realm_text" android:textSize="29sp" android:textStyle="bold" android:fontFamily="serif" android:gravity="center"/>
+        <TextView android:id="@+id/txtResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="THE VOTES ARE IN" android:textColor="@color/realm_purple_bright" android:textSize="13sp" android:textStyle="bold" android:gravity="center" android:layout_marginTop="14dp"/>
+        <TextView android:id="@+id/txtWinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Player 2 has been chosen by the council." android:textColor="@color/realm_text" android:textSize="22sp" android:textStyle="bold" android:fontFamily="serif" android:gravity="center" android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/tvVerdictDetail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The realm holds its breath. Was the council right?" android:textColor="@color/realm_muted" android:textSize="14sp" android:gravity="center" android:layout_marginTop="11dp"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp" android:background="@drawable/realm_divider"/>
+        <TextView android:id="@+id/tvOutcome" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="THE NIGHT CONTINUES" android:textColor="@color/realm_gold" android:textSize="12sp" android:textStyle="bold" android:gravity="center" android:layout_marginTop="17dp"/>
+        <Button android:id="@+id/btnNextRound" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="12dp" android:text="CONTINUE THE STORY  ✦" android:textColor="@color/realm_text" android:textStyle="bold" android:background="@drawable/realm_button"/>
+        <Button android:id="@+id/btnBackHome" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="9dp" android:text="RETURN TO THE REALM" android:textColor="@color/realm_lilac" android:textSize="12sp" android:background="@drawable/realm_button_dark"/>
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

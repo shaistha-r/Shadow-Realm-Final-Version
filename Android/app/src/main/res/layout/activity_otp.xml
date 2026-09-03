@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78" android:contentDescription="Shadow Realm night landscape"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <include layout="@layout/realm_topbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:layout_marginTop="12dp" android:background="@drawable/realm_panel">
+        <ImageView android:layout_width="58dp" android:layout_height="58dp" android:layout_gravity="center" android:src="@drawable/ic_lock" android:contentDescription="Secure verification"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="VERIFY YOUR IDENTITY" android:textColor="@color/realm_text" android:textSize="24sp" android:textStyle="bold" android:fontFamily="serif" android:gravity="center" android:layout_marginTop="10dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter the six-digit code sent to your phone. Demo mode accepts any six digits." android:textColor="@color/realm_muted" android:textSize="13sp" android:gravity="center" android:layout_marginTop="7dp"/>
+        <EditText android:id="@+id/otp" android:layout_width="match_parent" android:layout_height="62dp" android:layout_marginTop="24dp" android:background="@drawable/realm_input" android:hint="  •  •  •  •  •  •" android:textColor="@color/realm_text" android:textColorHint="#8E849B" android:textSize="20sp" android:gravity="center" android:inputType="number" android:maxLength="6"/>
+        <Button android:id="@+id/verifyOtp" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:text="VERIFY &amp; ENTER  🛡" android:textColor="@color/realm_text" android:textStyle="bold" android:background="@drawable/realm_button"/>
+        <TextView android:id="@+id/resendOtp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="15dp" android:text="RESEND CODE" android:textColor="@color/realm_purple_bright" android:textSize="13sp" android:clickable="true" android:focusable="true"/>
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

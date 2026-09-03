@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78" android:contentDescription="Shadow Realm night landscape"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <include layout="@layout/realm_topbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="21dp" android:layout_marginTop="12dp" android:background="@drawable/realm_panel">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HOW THE REALM WORKS" android:textColor="@color/realm_text" android:textSize="25sp" android:textStyle="bold" android:fontFamily="serif"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="A social deduction game of trust, deception and timing." android:textColor="@color/realm_muted" android:textSize="14sp" android:layout_marginTop="7dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="01  •  GATHER" android:textColor="@color/realm_purple_bright" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="22dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Create or join a private room. The demo starts with four players." android:textColor="@color/realm_lilac" android:textSize="14sp" android:layout_marginTop="5dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="02  •  RECEIVE A SECRET ROLE" android:textColor="@color/realm_purple_bright" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="17dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Villager, Seer, Healer or Traitor — never reveal your role." android:textColor="@color/realm_lilac" android:textSize="14sp" android:layout_marginTop="5dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="03  •  SURVIVE THE NIGHT" android:textColor="@color/realm_purple_bright" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="17dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Special roles may act. Traitors hunt. The village watches." android:textColor="@color/realm_lilac" android:textSize="14sp" android:layout_marginTop="5dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="04  •  DISCUSS &amp; VOTE" android:textColor="@color/realm_purple_bright" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="17dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Accuse carefully, defend yourself, then choose one suspect." android:textColor="@color/realm_lilac" android:textSize="14sp" android:layout_marginTop="5dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="05  •  WIN CONDITION" android:textColor="@color/realm_purple_bright" android:textSize="12sp" android:textStyle="bold" android:layout_marginTop="17dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="The village wins by exposing every traitor. The traitor wins by surviving the council." android:textColor="@color/realm_lilac" android:textSize="14sp" android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

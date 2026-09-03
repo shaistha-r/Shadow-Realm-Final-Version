@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/realm_bg">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shadow_realm_bg" android:scaleType="centerCrop" android:alpha="0.78" android:contentDescription="Shadow Realm night landscape"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/realm_scrim"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+            
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <include layout="@layout/realm_topbar"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="21dp" android:layout_marginTop="12dp" android:background="@drawable/realm_panel">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="THE COUNCIL" android:textColor="@color/realm_text" android:textSize="27sp" android:textStyle="bold" android:fontFamily="serif" android:gravity="center"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="One vote. One voice. One chance to expose the traitor." android:textColor="@color/realm_muted" android:textSize="14sp" android:gravity="center" android:layout_marginTop="7dp"/>
+        <RadioGroup android:id="@+id/playerGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+            <RadioButton android:id="@+id/player1" android:layout_width="match_parent" android:layout_height="51dp" android:text="Player 1  •  The Quiet One" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple"/>
+            <RadioButton android:id="@+id/player2" android:layout_width="match_parent" android:layout_height="51dp" android:text="Player 2  •  The Watcher" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple"/>
+            <RadioButton android:id="@+id/player3" android:layout_width="match_parent" android:layout_height="51dp" android:text="Player 3  •  The Outsider" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple"/>
+            <RadioButton android:id="@+id/player4" android:layout_width="match_parent" android:layout_height="51dp" android:text="Player 4  •  The Helpful One" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple"/>
+            <RadioButton android:id="@+id/player5" android:layout_width="match_parent" android:layout_height="51dp" android:text="Player 5" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple" android:visibility="gone"/>
+            <RadioButton android:id="@+id/player6" android:layout_width="match_parent" android:layout_height="51dp" android:text="Player 6" android:textColor="@color/realm_lilac" android:buttonTint="@color/realm_purple" android:visibility="gone"/>
+        </RadioGroup>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Your vote is final for this round." android:textColor="#82768E" android:textSize="11sp" android:gravity="center" android:layout_marginTop="8dp"/>
+        <Button android:id="@+id/btnSubmitVote" android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginTop="15dp" android:text="⚔  LOCK MY VOTE" android:textColor="@color/realm_text" android:textStyle="bold" android:background="@drawable/realm_button"/>
+    </LinearLayout>
+</LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

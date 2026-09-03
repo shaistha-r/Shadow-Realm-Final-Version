@@ -1,0 +1,14 @@
+<resources>
+    <color name="realm_bg">#05020D</color>
+    <color name="realm_panel">#D90B0717</color>
+    <color name="realm_panel_soft">#B30B0714</color>
+    <color name="realm_purple">#A855F7</color>
+    <color name="realm_purple_bright">#D8B4FE</color>
+    <color name="realm_lilac">#E9D5FF</color>
+    <color name="realm_text">#FAF7FF</color>
+    <color name="realm_muted">#B7AABD</color>
+    <color name="realm_line">#55B66CFF</color>
+    <color name="realm_danger">#F87171</color>
+    <color name="realm_success">#6EE7B7</color>
+    <color name="realm_gold">#F5C76B</color>
+</resources>
